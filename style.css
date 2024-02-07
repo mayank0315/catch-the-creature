@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dragon hunter;
+  font-weight: 100;
+  color: #f3b95f;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  overflow: hidden;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  background-color: #561c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+#hide {
+  overflow: hidden;
+}
+h1,
+h2 {
+  font-size: 70px;
+}
+.screen button {
+  padding: 20px 45px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #f3b95f;
+  font-size: 30px;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f3b95f;
+  color: #561c24;
+}
+button:active {
+  scale: 0.7;
+}
+
+.elem {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.elem_container {
+  border: 1px solid #f3b95f;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20%;
+}
+.elem_container img {
+  object-fit: contain;
+  height: 100px;
+}
+.elem_container:hover {
+  background-color: #f3b95f;
+  cursor: grab;
+}
+.elem_container:hover h3 {
+  color: #561c24;
+}
+.elem_container:active {
+  scale: 0.9;
+  cursor: grabbing;
+}
+
+.screen .scoreboard {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f3b95f;
+  /* background-color: rebeccapurple; */
+  padding: 0px 35px;
+}
+.scoreboard h2 {
+  font-size: 20px;
+  padding: 0px 20px;
+  letter-spacing: 4px;
+}
+#playground {
+  position: relative;
+  height: calc(95% - 80px);
+  margin-top: 6%;
+  width: 92%;
+  /* background-color: red; */
+  
+}
+#playground img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.scoreboard .elemss {
+  display: flex;
+  align-items: center;
+}
+#playground h1 {
+  display: flex;
+  margin-top: 18%;
+  justify-content: center;
+}
